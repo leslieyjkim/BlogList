@@ -3,19 +3,16 @@
 //you have some expectations of what's gonna be passed into you. 
 //the calling code has expectations of the function, and that the function should do its best to fulfill those expectations. (like contract)
 
+import './BlogSummary.css';
 
 const BlogSummary = (props) => {
     return (
-        <div>
-            <h1>BlogSummary</h1>
-            { props.title } 
-            {/* js should be in curly bracket */}
-            { props.author }
-            { props.date }
-            <a href="http://example.com/path.html">{ props.url }</a>
-        </div>
-    );
-
+        <div className="blog_summary">
+            <h2>{ 'Lorem Ipsum Title Goes Here' }</h2>
+            <p>By {'Nally'}</p>
+            <p>Date: {'2023-01-01'}</p>
+            <a href="http://example.com/path.html">Would You Like To Know More?</a>
+        </div>);
 };
 
 export default BlogSummary;
