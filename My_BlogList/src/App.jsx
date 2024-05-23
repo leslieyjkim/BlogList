@@ -6,7 +6,8 @@ function App() {
 
   return (
     <div>
-      <BlogSummary />
+      <BlogSummary title="Lorem Ipsum Monkey Fuzz" author="Nally" date="2023-01-01" url="http://example.com/path.html"
+      />
     </div>
   )
 }

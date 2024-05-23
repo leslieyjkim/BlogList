@@ -8,10 +8,10 @@ import './BlogSummary.css';
 const BlogSummary = (props) => {
     return (
         <div className="blog_summary">
-            <h2>{ 'Lorem Ipsum Title Goes Here' }</h2>
-            <p>By {'Nally'}</p>
-            <p>Date: {'2023-01-01'}</p>
-            <a href="http://example.com/path.html">Would You Like To Know More?</a>
+            <h2>{ props.title }</h2>
+            <p>By { props.author }</p>
+            <p>Date: { props.date }</p>
+            <a href={ props.url }>Would You Like To Know More?</a>
         </div>);
 };
 
