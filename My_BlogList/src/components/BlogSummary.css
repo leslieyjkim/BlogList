@@ -1,10 +1,20 @@
 .blog_summary {
     border: 3px solid white;
-    margin: 5px;
+    margin: 1em;
     border-radius: 10px;
     padding: 1em;
 }
 
 .blog_summary h2 {
     font-size: 1em;
+}
+
+.ClickedButton {
+    color: black;
+    background-color: #bada55;
+    border-radius: 5px;
+}
+
+.LocalClickedCount {
+    color: #ed38e4;
 }
