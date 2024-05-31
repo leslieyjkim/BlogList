@@ -11,10 +11,10 @@ function App() {
   // The value of the checkbox is gonna correspond to some state that we have. 
   // And that state is gonna cause the re-rendering of our whole app when it changes. 
   // Because checkbox is gonna live at the top level.
-  const [showList, setShowList] = useState(false); //boolean state
+  const [showList, setShowList] = useState(false); //boolean state //managing components example#1
 
 
-  // const [user, setUser] = useState('Leslie Kim');
+  // const [user, setUser] = useState('Leslie Kim'); //managed components example#2
 
   //this is process section before displaying
   //form this data (object) and pass it down to the component of 'BlogList' 
