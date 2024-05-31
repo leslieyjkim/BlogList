@@ -12,7 +12,9 @@ function App() {
   // And that state is gonna cause the re-rendering of our whole app when it changes. 
   // Because checkbox is gonna live at the top level.
   const [showList, setShowList] = useState(false); //boolean state
-  const [user, setUser] = useState('Leslie Kim');
+
+
+  // const [user, setUser] = useState('Leslie Kim');
 
   //this is process section before displaying
   //form this data (object) and pass it down to the component of 'BlogList' 
@@ -35,13 +37,13 @@ function App() {
     <div>
       {/* <BlogSummary title="Lorem Ipsum Monkey Fuzz" author="Nally" date="2023-01-01" url="http://example.com/path.html"/> */}
       <h1>Museum Quest DC</h1>
-      <p>
+      {/* <p>
         <input 
           type="text"
           onChange={(event) => { setUser((prev) => {return event.target.value}) }} 
           value={user} 
         />
-      </p>
+      </p> */}
       <p>Show The List: 
         <input 
           type="checkbox" 

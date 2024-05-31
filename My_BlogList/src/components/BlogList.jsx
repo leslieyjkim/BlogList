@@ -24,7 +24,7 @@ import { useState } from 'react';
 
 const BlogList = (props) => {
 
-    const [clickCount, setClickCount] = useState(0);
+    const [clickCount, setClickCount] = useState(0); //Global counts
 
     return (<div className="blog_list">
         <h2>Museum List</h2>
