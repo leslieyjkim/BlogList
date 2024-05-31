@@ -47,10 +47,11 @@ function App() {
       <p>Show The List: 
         <input 
           type="checkbox" 
-          onChange={(event)=> {setShowList((prev) => !prev) }} 
+          onChange={(event) => {setShowList((prev) => !prev)}} //checkbox doesn't have value, and make it like a toggle
         />
       </p>
-      { showList && <BlogList list={listOfMuseums} /> } 
+      { showList && <BlogList list={listOfMuseums}/> } 
+      {/* above line: javascript expression in {}. if 'showList' value is true, and the right hand thing that's returned. */}
     </div>
   )
 }
