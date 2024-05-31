@@ -27,14 +27,19 @@ const BlogList = (props) => {
     const [clickCount, setClickCount] = useState(0);
 
     return (<div className="blog_list">
-        <h1>Blog List</h1>
+        <h2>Museum List</h2>
         <p className="total_counts">{clickCount} liked in total</p>
         {
         // props.list.map(item => item)
+
+        // Each 'callback' inside the props.list.map(), 
+        // is going to return a BlogSummaryItem.
+        // It encapsulates what a BlogList is gonna look like, 
+        // it becomes in charge of how it's gonna render the BlogSummary. It is being handled here.
         props.list.map((item, index) => {
             return <BlogSummary setClickCount={setClickCount} key={index} author={item.author} title={item.title} date={item.date} url={item.url}/>;
         })
-        }
+        } 
     </div>);
 };
 

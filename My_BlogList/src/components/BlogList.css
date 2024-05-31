@@ -1,3 +1,9 @@
+.blog_list{
+    background-color: rgb(21, 21, 25);
+    border-radius: 20px;
+    padding: 1em;
+}
+
 .total_counts{
     color: #bada55;
     border: 3px solid #bada55;
@@ -6,3 +12,4 @@
     padding: 1em;
 
 }
+

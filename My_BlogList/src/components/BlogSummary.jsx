@@ -21,7 +21,7 @@ const BlogSummary = (props) => {
             <p className="LocalClickedCount">{localCount} liked </p>
             <p>By { props.author }</p>
             <p>Date: { props.date }</p>
-            <a href={ props.url }>Would You Like To Know More?</a>
+            <a href={ props.url }>Click & Explore this Museum</a>
             <button className="ClickedButton" onClick={clickHandler}>like</button>
         </div>);
 };
